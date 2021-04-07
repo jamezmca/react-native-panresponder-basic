@@ -4,8 +4,11 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View style={{...styles.container, marginTop: 50, borderColor: 'black', borderWidth: 1}}>
+      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}><Text>view 1</Text></View>
+      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}><Text>view 2</Text></View>
+      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}><Text>view 3</Text></View>
+      
       <StatusBar style="auto" />
     </View>
   );
